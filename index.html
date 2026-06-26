@@ -18,21 +18,26 @@
             <div class="form-group">
                 <label for="creature">Créature à invoquer :</label>
                 <select id="creature">
-                    <option value="🐙 le Chat-Octo">🐙 le Chat-Octo</option>
-                    <option value="🐉 le Dragon-Debug">🐉 le Dragon-Debug</option>
-                    <option value="🦄 la Licorne-CSS">🦄 la Licorne-CSS</option>
-                    <option value="🦊 le Renard-Refacto">🦊 le Renard-Refacto</option>
-                </select>
+    <option value="chat">le Chat-Octo</option>
+    <option value="dragon">le Dragon-Debug</option>
+    <option value="licorne"> la Licorne-CSS</option>
+    <option value="renard">le Renard-Refacto</option>
+</select>
             </div>
             <button type="submit">Invoquer !</button>
         </form>
     </section>
     <section id="resultat" class="cache">
         <h2>Invocation réussie ! </h2>
+        <div class="creature-wrapper">
+        <img id="avatar-creature" src="" alt="Ta créature invoquée">
+    </div>
         <p id="message"></p>
         <button id="recommencer">Renvoyer la créature</button>
     </section>
-   </main>
+  </main>
+
+    <audio id="son-magique" src="magie.mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html>
